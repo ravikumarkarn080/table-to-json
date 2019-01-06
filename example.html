@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converter</title>
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script src="../lib/jquery.tabletojson.min.js"></script>
+</head>
+<body>
+<table id='example-table'>
+   <!--Put your table here-->
+</table>
+
+<button id="convert-table">Convert!</button>
+
+<script>
+    $('#convert-table').click(function () {
+        const table = $('#example-table').tableToJSON();
+        console.log(table);
+    });
+</script>
+
+</body>
+</html>
